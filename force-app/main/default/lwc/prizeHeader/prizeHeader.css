@@ -1,0 +1,44 @@
+.header-item{
+    font-size: small;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.firstPrize{
+    background: rgb(248, 217, 180);
+    border-radius: 12px;
+}
+
+.secondPrize{
+    background: rgb(248, 226, 202);
+    border-radius: 12px;
+}
+
+
+.thirdPrize{   
+    background: rgb(248, 238, 206);
+    border-radius: 12px;
+}
+
+
+.roundOneLoserPrize{
+    background: rgb(248, 238, 190);
+    border-radius: 12px;
+}
+
+
+.ratingPrize{
+    background: rgb(248, 226, 190);
+    border-radius: 12px;
+}
+
+.veteranPrize{
+    background: rgb(248, 220, 185);
+    border-radius: 12px;
+}
+
+.juniorPrize{
+    background: rgb(248, 228, 200);
+    border-radius: 12px;
+}

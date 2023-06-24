@@ -1,0 +1,36 @@
+.app{
+    min-height: 150px;
+    background-image: url(/sfsites/c/resource/ChessBackground);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.custom-combo{
+    width: 200px;    
+}
+
+.custom-box{
+    background: lightyellow
+}
+
+img{
+    width: 200px;
+    height:auto;
+    padding: 16px;
+    border-radius: 20px;
+}
+
+h1{
+    color: yellowgreen;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 32px;
+}
+
+.combo-control{
+
+    padding-top: 44px;
+    padding-left: 64px;
+
+}

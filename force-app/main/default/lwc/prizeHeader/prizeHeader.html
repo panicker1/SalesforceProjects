@@ -1,0 +1,116 @@
+<template>   
+    <div class="slds-page-header slds-page-header_record-home">
+        <!--div class="slds-page-header__row slds-page-header__row_gutters"=-->
+            <!--div class="slds-page-header__col-details"-->               
+                        <lightning-layout>
+                            <template if:true={firstPrize}>
+                                <lightning-layout-item flexibility="auto" padding="around-small">
+                                    <div class="sldx-box slds-box_xx-small slds-m-around_small slds-p-around_small firstPrize slds-grid">   
+                                        <div class="slds-col">
+                                            <span><img src={trophy}  width="40px" height="40px"/></span>
+                                          </div>  
+                                          <div class="slds-col">
+                                            <span><div class="header-item" title="First Prize">First</div>
+                                                <div class="header-item" title="First Prize Winners">{firstPrize}</div>  </span>
+                                          </div>                                  
+                                                                                     
+                                        </div>
+                                </lightning-layout-item>
+                            </template>                           
+                            <template if:true={secondPrize}>
+                                <lightning-layout-item flexibility="auto" padding="around-small">
+                                    <div class="sldx-box slds-box_xx-small slds-m-around_small slds-p-around_small secondPrize slds-grid"> 
+                                        <div class="slds-col">
+                                            <span><img src={trophy}  width="40px" height="40px"/></span>
+                                          </div>
+                                          <div class="slds-col">
+                                            <span><div class="header-item" title="Second Prize">Second</div>
+                                                <div class="header-item" title="First Prize Winners">{secondPrize}</div></span>
+                                          </div>                  
+                                        </div>
+                                </lightning-layout-item>                            
+                            </template>   
+                            <template if:true={thirdPrize}>
+                                <lightning-layout-item flexibility="auto" padding="around-small">
+                                    <div class="sldx-box slds-box_xx-small slds-m-around_small slds-p-around_small thirdPrize slds-grid">
+                                        <div class="slds-col">
+                                            <span><img src={trophy} width="40px" height="40px"/></span>
+                                          </div>   
+                                          <div class="slds-col">
+                                            <span><div class="header-item" title="Third Prize">Third</div>
+                                                <div class="header-item" title="First Prize Winners">{thirdPrize}</div>  </span>
+                                          </div> 
+                                                                          
+                                   
+                                </div>
+                                </lightning-layout-item>
+                            </template> 
+                            <template if:true={ratingPrize}>
+                                <lightning-layout-item flexibility="auto" padding="around-small">
+                                    <div class="sldx-box slds-box_xx-small slds-m-around_small slds-p-around_small ratingPrize slds-grid">
+                                        <div class="slds-col">
+                                            <span><img src={otherPrizes} width="40px" height="40px"/></span>
+                                          </div>   
+                                          <div class="slds-col">
+                                            <span><div class="header-item " title="First Prize">Rating</div>
+                                                <div class="header-item" title="First Prize Winners">{ratingPrize}</div></span>
+                                          </div>
+                                        
+                                        
+                                   
+                                </div>
+                            </lightning-layout-item>
+                            </template>    
+                            <template if:true={roundOneLoserPrize}>
+                                <lightning-layout-item flexibility="auto" padding="around-small">
+                                    <div class="sldx-box slds-box_xx-small slds-m-around_small slds-p-around_small roundOneLoserPrize slds-grid">
+                                        <div class="slds-col">
+                                            <span><img src={otherPrizes} width="40px" height="40px"/></span>
+                                          </div>   
+                                          <div class="slds-col">
+                                            <span><div class="header-item " title="First Prize">Round 1 Loser</div>
+                                                <div class="header-item" title="First Prize Winners">{roundOneLoserPrize}</div></span>
+                                          </div>
+
+                                        
+                                   
+                                </div>
+                                </lightning-layout-item>
+                            </template> 
+                            <template if:true={veteranPrize}>
+                                <lightning-layout-item flexibility="auto" padding="around-small">
+                                    <div class="sldx-box slds-box_xx-small slds-m-around_small slds-p-around_small veteranPrize slds-grid">
+                                        <div class="slds-col">
+                                            <span><img src={otherPrizes} width="40px" height="40px"/></span>
+                                          </div>  
+                                          <div class="slds-col">
+                                            <span><div class="header-item " title="First Prize">Veteran</div>
+                                                <div class="header-item" title="First Prize Winners">{veteranPrize}</div></span>
+                                          </div>                                 
+                                
+                                </div>
+                                </lightning-layout-item>  
+                            </template>
+                            <template if:true={juniorPrize}>
+                                <lightning-layout-item flexibility="auto" padding="around-small">
+                                    <div class="sldx-box slds-box_xx-small slds-m-around_small slds-p-around_small juniorPrize slds-grid">
+                                        <div class="slds-col">
+                                            <span><img src={otherPrizes} width="40px" height="40px"/></span>
+                                          </div> 
+                                          <div class="slds-col">
+                                            <span><div class="header-item " title="First Prize">Junior</div>
+                                                <div class="header-item" title="First Prize Winners">{juniorPrize}</div></span>
+                                          </div>                   
+                                 
+                                 
+                                </div>
+                                </lightning-layout-item> 
+                            </template>
+                        </lightning-layout>                        
+               
+            <!--/div-->
+        <!--/div-->
+    </div>
+    
+
+</template>

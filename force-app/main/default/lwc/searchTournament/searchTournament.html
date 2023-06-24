@@ -1,0 +1,20 @@
+<template>    
+    userProfileName : {userProfileName}
+    <div class="slds-box slds-p-around_none slds-m-top_x-small slds-m-bottom_medium slds-m-horizontal_none">
+        <lightning-layout>
+            <lightning-layout-item  size ="12" padding="around-small">
+                <!--div class="custom-box slds-box slds-p-around_medium slds-text-align_left"-->                
+                    <lightning-combobox
+                        class="custom-combo"
+                        name="tournaments"  
+                        label="Tournaments"                      
+                        value={value}
+                        placeholder="Select tournament"
+                        options={tournaments}
+                        onchange={handleChange}
+                        variant="label-hidden" ></lightning-combobox>                        
+                <!--/div-->
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>    
+</template>

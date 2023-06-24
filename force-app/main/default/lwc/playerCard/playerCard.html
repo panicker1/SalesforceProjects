@@ -1,0 +1,76 @@
+<template>
+    <article class="slds-card custom-card">       
+        <h1 class={prizeTag}>{playerRecord.Entrant_Name__c} </h1><p></p>
+        <div class="slds-grid">
+            <div class="slds-col slds-size_1-of-2">
+                <template if:true={imageAvailable}>
+                    <img src={imageUrl} height="150px" width="150px"/>
+                </template>
+                <template if:false={imageAvailable}>
+                    <img src={userPic} height="150px" width="150px"/>
+                </template>
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <template if:true={firstPrizeWinner}>
+                    <img src ={trophy} class={shakeImage}>
+                </template>
+            </div>
+        </div>       
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_1-of-2 slds-m-left_small">
+                <div class="slds-text-title slds-m-top_small">
+                    Rating
+                </div>
+                <div class="slds-m-bottom_small">
+                    {playerRecord.Rating__c}
+                </div>  
+                <div class="slds-text-title">
+                    Amount
+                </div>
+                <div class="slds-m-bottom_small">
+                    {formattedAmount}
+                </div>   
+                <div class="slds-text-title">
+                    Rating Prize Eligible
+                </div>
+                <div class="slds-m-bottom_small">
+                    {playerRecord.Rating_Prize_Eligible__c}
+                </div>  
+                <div class="slds-text-title">
+                    Veteran
+                </div>
+                <div class="slds-m-bottom_small">
+                    {playerRecord.Veteran__c}
+                </div>  
+            
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <div class="slds-text-title slds-m-top_small">
+                    Prize
+                </div>
+                <div class="slds-m-bottom_small">
+                    {playerRecord.Prize_Name__c}
+                </div>  
+                <div class="slds-text-title">
+                    Points
+                </div>
+                <div class="slds-m-bottom_small">
+                    {playerRecord.Points__c}
+                </div>
+                <div class="slds-text-title">
+                    Round One Lost
+                </div>
+                <div class="slds-m-bottom_small">
+                    {playerRecord.Round_One_Lost__c}
+                </div>
+                <div class="slds-text-title">
+                    Junior
+                </div>
+                <div class="slds-m-bottom_small">
+                    {playerRecord.Junior__c}
+                </div>
+            </div>
+        </div>
+        <h2 class={prizeTag}></h2>
+    </article>
+</template>

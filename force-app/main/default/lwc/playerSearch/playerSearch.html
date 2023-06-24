@@ -1,0 +1,104 @@
+<template>
+    <div class="main-container">
+      
+
+        <div class={containerTag}>
+            <div class="header-panel">
+                <div class= "{prizeTag}">                    
+                    {playerRecord.Entrant_Name__c}
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <template if:true={imageAvailable}>
+                            <img src={imageUrl} height="150px" width="150px"/>
+                        </template>
+                        <template if:false={imageAvailable}>
+                            <img src={userPic} height="150px" width="150px"/>
+                        </template>
+                        
+                    </div>
+                    <div class="column">
+                        <template if:true={firstPrizeWinner}>
+                            <img src ={trophy} class={shakeImage}>
+                        </template>
+                    </div>                    
+                </div>                
+                <div>
+                    <div>
+                        <div class="slds-grid subheader-row">
+                            <div class="slds-col slds-size_1-of-2 row-item">
+                                <div>
+                                    <div class="row-item-label slds-text-title">
+                                        Rating
+                                    </div>
+                                    <div class="row-item-value">
+                                        {playerRecord.Rating__c}
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="row-item-label slds-text-title">
+                                        Amount
+                                    </div>
+                                    <div class="row-item-value">
+                                        {formattedAmount}
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="row-item-label slds-text-title">
+                                        Rating Prize Eligible
+                                    </div>
+                                    <div class="row-item-value">
+                                        {playerRecord.Rating_Prize_Eligible__c}
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="row-item-label slds-text-title">
+                                        Veteran
+                                    </div>
+                                    <div class="row-item-value">
+                                        {playerRecord.Veteran__c}
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="slds-col slds-size_1-of-2 row-item">
+                                <div>
+                                    <div class="row-item-label slds-text-title">
+                                        Prize Name
+                                    </div>
+                                    <div class="row-item-value">
+                                        {playerRecord.Prize_Name__c}
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="row-item-label slds-text-title">
+                                        Points
+                                    </div>
+                                    <div class="row-item-value">
+                                        {playerRecord.Points__c}
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="row-item-label slds-text-title">
+                                        Round One Lost
+                                    </div>
+                                    <div class="row-item-value">
+                                        {playerRecord.Round_One_Lost__c}
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="row-item-label slds-text-title">
+                                        Junior
+                                    </div>
+                                    <div class="row-item-value">
+                                        {playerRecord.Junior__c}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

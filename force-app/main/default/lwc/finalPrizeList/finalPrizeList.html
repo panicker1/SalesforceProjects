@@ -1,0 +1,24 @@
+<template>
+    <lightning-layout>
+        <lightning-layout-item  size="8" class="slds-p-right_medium">
+            <div>
+                <lightning-datatable
+                        key-field="id"
+                        data={finalPrizes}
+                        columns={columns}
+                        onrowaction={handleRowAction}
+                        hide-checkbox-column>                
+                </lightning-datatable>
+            </div>
+        </lightning-layout-item> 
+        <!--lightning-layout-item size="4">
+            <c-player-view record-id={record.Id} image-url={imageUrl}></c-player-view>
+        </lightning-layout-item--> 
+        <lightning-layout-item size="4">
+            <c-player-card player-record={record} image-url={imageUrl}></c-player-card>
+        </lightning-layout-item> 
+        <!--lightning-layout-item size="3">
+            <c-player-card-responsive individual-record={record} individual-image-url={imageUrl}></c-player-card-responsive>  
+        </lightning-layout-item-->
+    </lightning-layout>
+</template>

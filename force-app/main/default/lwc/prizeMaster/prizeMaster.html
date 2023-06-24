@@ -1,0 +1,36 @@
+<template>
+    <div class="app">
+        <lightning-layout>
+            <lightning-layout-item size="3">
+                <div>
+                <a href="https://kidlingtonchess.org.uk/" target="_blank">
+                    <img src={exeterHallPath} alt="ExeterHall">
+                </a>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item size="6">                
+                <h1>
+                    <lightning-icon icon-name='standard:opportunity' alternative-text='opportunity' size='large' title='opportunity'></lightning-icon>
+                     Tournament Winners !!!  {selectedLabel}
+                </h1>
+            </lightning-layout-item>
+            <lightning-layout-item class="combo-control" size="3">
+
+                <div>
+                    <lightning-combobox class="custom-combo" name="tournaments" label="Tournaments" value={value}
+                        placeholder="Select tournament" options={tournaments} onchange={handleChange}
+                        variant="label-hidden" disabled={guestUser}>
+                    </lightning-combobox>
+
+                </div>
+
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+
+        <div>
+            <c-prize-header tournament-id={value}></c-prize-header>
+            <c-prize-section-tabs tournament-id={value} onsectionchange={onSectionChangeHandler}></c-prize-section-tabs>
+        </div>
+
+</template>

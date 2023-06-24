@@ -1,0 +1,153 @@
+.main-container {
+    margin: -12px;
+    height: 100%;
+    /*background: white;*/
+    position: fixed;
+    width: 100%; 
+}
+
+.custom-card{
+    background: floralwhite;
+    border-radius: 25px;
+    box-shadow: 0px -2px 16px rgb(248, 217, 180);   
+}
+
+h1{
+    padding-top: 16px;
+    padding-left: 8px;    
+    border-radius: 25px 25px 0 0;
+}
+
+h2{
+    padding-bottom: 32px;
+    padding-left: 8px;    
+    border-radius: 0px 0px 25px 25px;
+}
+h3{
+    font-weight: 700;
+    font-size: large;
+}
+
+.search-panel {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 1rem 2rem 1rem;
+    background: lightblue;
+}
+
+.card-container {
+    flex-direction: column;
+    border-radius: 2rem;
+    box-shadow: 0px -2px 16px cadetblue;    
+    width: 500px;
+    /*margin-top: -2rem;*/
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+}
+
+
+
+.player-header {   
+    font-size: medium;
+    font-weight: 600;
+    padding: 16px 12px;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.header-panel {
+    background-color: #dddbda;
+    width: 500px;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.Red {
+    background: red;
+}
+
+.firstPrize{
+    background: rgb(248, 217, 180);    
+}
+
+.secondPrize{
+    background: rgb(248, 226, 202);    
+}
+
+
+.thirdPrize{   
+    background: rgb(248, 238, 206);    
+}
+
+
+.roundOneLoserPrize{
+    background: rgb(248, 238, 190);    
+}
+
+
+.ratingPrize{
+    background: rgb(248, 226, 190);    
+}
+
+.veteranPrize{
+    background: rgb(248, 220, 185);    
+}
+
+.juniorPrize{
+    background: rgb(248, 228, 200);   
+}
+
+.defaultPrize{
+    background: #dddbda;
+}
+
+.subheader-row {
+    background: #f3f2f2;
+    display: flex;
+    padding: 8px 4px;
+}
+
+.row-item {
+    flex: 1 1 auto;
+    margin: 0px 8px;    
+}
+
+.body {
+    margin-top: 1rem;
+    width: 560px;
+    padding: 0.5rem;
+}
+
+.slds-grid_align-end{
+    justify-content: left !important;
+}
+
+img.shake {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    padding-top:32px;
+    padding-left:32px;
+
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  .column {
+    flex:50%;    
+  }
+  .row {
+    display: flex;
+  }
